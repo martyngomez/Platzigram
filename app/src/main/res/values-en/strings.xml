@@ -2,4 +2,5 @@
 <resources>
     <string name="hint_username">Username</string>
     <string name="hint_password">Contraseña</string>
+    <string name="text_button_login">Login</string>
 </resources>
