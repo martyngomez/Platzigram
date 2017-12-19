@@ -12,7 +12,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
-        showToolbar(getResources().getString(R.string.toolbar_title_createaccount),false);//Linkea con el recurso
+        showToolbar(getResources().getString(R.string.toolbar_title_createaccount),true);//Linkea con el recurso
     }
 
 
@@ -20,6 +20,6 @@ public class CreateAccountActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(title);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(upButton); // Habilita boton Back
     }
 }
