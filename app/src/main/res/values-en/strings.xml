@@ -11,4 +11,6 @@
     <string name="hint_confirm_password">Confirmar Contraseña</string>
     <string name="text_button_create_account">Unete</string>
     <string name="toolbar_title_createaccount">Create Account</string>
+    <string name="firstword_card">Hace</string>
+    <string name="likenumber_card">10 Me gusta</string>
 </resources>

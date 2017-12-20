@@ -12,4 +12,8 @@
     <string name="hint_confirm_password">Confirmar Contraseña</string>
     <string name="text_button_create_account">Unete</string>
     <string name="toolbar_title_createaccount">Crear Cuenta</string>
+    <string name="username_card">Martin Gomez</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">2 dias</string>
+    <string name="likenumber_card">10 Me gusta</string>
 </resources>
