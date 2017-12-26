@@ -34,6 +34,7 @@
             android:name="com.mardev.platzigram.ReferenciaActivity"
             android:label="@string/title_activity_referencia"
             android:theme="@style/AppTheme" />
+        <activity android:name="com.mardev.platzigram.view.ContainerActivity" />
 
         <meta-data
             android:name="android.support.VERSION"
