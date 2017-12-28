@@ -220,12 +220,12 @@
         "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d652d0ed8384efaa9eee86a49da682a8\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
-        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e0c0d88f2a405172a2786efca03a85e6\\res\\layout\\design_bottom_navigation_item.xml"
-    },
-    {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\layout_bottombar.xml.flat",
         "source": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\src\\main\\res\\layout\\bottombar.xml"
+    },
+    {
+        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
+        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e0c0d88f2a405172a2786efca03a85e6\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_home.png.flat",
@@ -656,12 +656,12 @@
         "source": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
-        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e0c0d88f2a405172a2786efca03a85e6\\res\\layout\\design_text_input_password_icon.xml"
-    },
-    {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile.png.flat",
         "source": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
+        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e0c0d88f2a405172a2786efca03a85e6\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_clear_material.xml.flat",
@@ -1348,12 +1348,12 @@
         "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d652d0ed8384efaa9eee86a49da682a8\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d652d0ed8384efaa9eee86a49da682a8\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_profile.png.flat",
         "source": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\src\\main\\res\\drawable-xxhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d652d0ed8384efaa9eee86a49da682a8\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1408,12 +1408,12 @@
         "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e0c0d88f2a405172a2786efca03a85e6\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
-        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d652d0ed8384efaa9eee86a49da682a8\\res\\color-v23\\abc_tint_switch_track.xml"
-    },
-    {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_profile.png.flat",
         "source": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
+        "source": "C:\\Users\\MTN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d652d0ed8384efaa9eee86a49da682a8\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "D:\\MTN\\CURSOS\\Platzi\\Android Github\\Platzigram\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_heart.png.flat",
