@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\bottom-bar-2.3.1.aar\7f6709057a177a07854cc976bfb7582c\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e0c0d88f2a405172a2786efca03a85e6\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\d652d0ed8384efaa9eee86a49da682a8\AndroidManifest.xml:17:1-31:12
@@ -20,25 +20,29 @@ MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\MTN\.gradle\ca
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\29773bf881efeb323e4f3bf35e590aa9\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\5182dd2bd507f3612bb7eb32c899e943\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\59eb8ecf61c88b41d8b6e71ba7dc896e\AndroidManifest.xml:17:1-30:12
-INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml
 		INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:5:5-31:19
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:7:5-33:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e0c0d88f2a405172a2786efca03a85e6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e0c0d88f2a405172a2786efca03a85e6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\d652d0ed8384efaa9eee86a49da682a8\AndroidManifest.xml:25:5-29:19
@@ -70,55 +74,55 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\MTN\.gradle\cac
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\59eb8ecf61c88b41d8b6e71ba7dc896e\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MTN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\59eb8ecf61c88b41d8b6e71ba7dc896e\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.mardev.platzigram.LoginActivity
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:12:19-48
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:14:19-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.mardev.platzigram.view.CreateAccountActivity
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:21:9-27:20
 	android:parentActivityName
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:21:13-56
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:23:13-56
 	android:name
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:20:13-55
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:22:13-55
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:22:13-24:50
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:24:13-26:50
 	android:value
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:24:17-47
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:26:17-47
 	android:name
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:23:17-63
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:25:17-63
 activity#com.mardev.platzigram.ReferenciaActivity
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:26:9-29:47
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:28:9-31:47
 	android:label
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:28:13-62
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:30:13-62
 	android:theme
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:29:13-44
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:31:13-44
 	android:name
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:27:13-47
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:29:13-47
 activity#com.mardev.platzigram.view.ContainerActivity
-ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:30:9-69
+ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:32:9-69
 	android:name
-		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:30:19-57
+		ADDED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml:32:19-57
 uses-sdk
 INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\MTN\CURSOS\Platzi\Android Github\Platzigram\app\src\main\AndroidManifest.xml

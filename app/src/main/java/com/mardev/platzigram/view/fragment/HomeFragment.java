@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
 
-        showToolbar("Home",false,view);
+        showToolbar(getResources().getString(R.string.tab_home),false,view);
         RecyclerView picturesRecycler = (RecyclerView)view.findViewById(R.id.pictureRecycler);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext()); //Layout Manager
@@ -51,9 +51,9 @@ public class HomeFragment extends Fragment {
     public ArrayList<Picture> buildPictures(){
         //Metodo que genera array de pioctures desde internet
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg","Martin Gomez","4 dias","4 "));
-        pictures.add(new Picture("https://www.definicionabc.com/wp-content/uploads/Paisaje-Natural.jpg","Pompeya Gomez","2 dias","5 "));
-        pictures.add(new Picture("https://quelindoesmipaisaje.files.wordpress.com/2011/02/paisaje.jpg","Mariana Ceballos","1 dias","2 "));
+        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg","Martin Gomez","4 dias","4 Me gusta"));
+        pictures.add(new Picture("https://www.definicionabc.com/wp-content/uploads/Paisaje-Natural.jpg","Pompeya Gomez","2 dias","5 Me gusta"));
+        pictures.add(new Picture("https://quelindoesmipaisaje.files.wordpress.com/2011/02/paisaje.jpg","Mariana Ceballos","1 dias","2 Me gusta"));
 
         return pictures;
     }
