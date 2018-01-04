@@ -17,6 +17,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.mardev.platzigram.LoginActivity" >
             <intent-filter>
@@ -37,6 +38,13 @@
             android:label="@string/title_activity_referencia"
             android:theme="@style/AppTheme" />
         <activity android:name="com.mardev.platzigram.view.ContainerActivity" />
+        <activity
+            android:name="com.mardev.platzigram.view.PictureDetailActivity"
+            android:parentActivityName="com.mardev.platzigram.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"

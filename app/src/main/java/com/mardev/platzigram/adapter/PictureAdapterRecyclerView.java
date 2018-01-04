@@ -1,6 +1,7 @@
 package com.mardev.platzigram.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.mardev.platzigram.R;
 import com.mardev.platzigram.model.Picture;
+import com.mardev.platzigram.view.PictureDetailActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -45,7 +47,14 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.likeNumberCard.setText(picture.getLike_number());
         Picasso.with(activity).load(picture.getPicture()).into(holder.pictureCard); //Carga imagenes de internet
 
-
+        //Listener que sobreescribe metodo click para hacer intent
+        holder.pictureCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity, PictureDetailActivity.class);
+                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override
