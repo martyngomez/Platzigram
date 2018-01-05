@@ -98,6 +98,7 @@
                         android:textStyle="bold"
                         android:textSize="@dimen/textsize_donthaveaccount"
                         android:layout_toRightOf="@+id/dontHaveAccount"
+                        android:paddingLeft="@dimen/margin_text"
                         android:onClick="goCreateAccount"/>
 
                 </RelativeLayout>
