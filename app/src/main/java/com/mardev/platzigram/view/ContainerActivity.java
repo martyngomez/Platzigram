@@ -16,10 +16,10 @@ public class ContainerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_container);
+        setContentView(R.layout.activity_container); //Relaciona con layout
 
         BottomBar bottonBar = findViewById(R.id.bottombar);
-        bottonBar.setDefaultTab(R.id.home);
+        bottonBar.setDefaultTab(R.id.home); //Fragment por defecto
 
         bottonBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override

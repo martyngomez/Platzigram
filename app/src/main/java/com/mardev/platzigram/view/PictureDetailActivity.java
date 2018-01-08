@@ -1,9 +1,12 @@
  package com.mardev.platzigram.view;
 
- import android.os.Bundle;
- import android.support.design.widget.CollapsingToolbarLayout;
- import android.support.v7.app.AppCompatActivity;
+ import android.graphics.Color;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Fade;
 
 import com.mardev.platzigram.R;
 
@@ -14,6 +17,11 @@ import com.mardev.platzigram.R;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picture_detail);
         showToolbar("", true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            getWindow().setStatusBarColor(Color.TRANSPARENT); // Para que saque la barra superior , solo valido para lollipop en adelante
+            getWindow().setEnterTransition(new Fade());
+        }
+
     }
 
      public void showToolbar(String title,boolean upButton ) {

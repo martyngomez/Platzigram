@@ -2,7 +2,10 @@ package com.mardev.platzigram.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,12 +50,26 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.likeNumberCard.setText(picture.getLike_number());
         Picasso.with(activity).load(picture.getPicture()).into(holder.pictureCard); //Carga imagenes de internet
 
-        //Listener que sobreescribe metodo click para hacer intent
+        //Listener que sobreescribe metodo click para hacer intent en cardview
         holder.pictureCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(activity, PictureDetailActivity.class);
-                activity.startActivity(intent);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP  ){ // Valida version
+                    Explode explode =  new Explode(); // Se genera objeto para personalizar, para usar por defecto no es necesario
+                    explode.setDuration(1000);
+                    activity.getWindow().setExitTransition(explode); // se usa activity por star en adapter si no no hace falta
+                   // activity.getWindow().setExitTransition(new Explode()); //Para tomar valores por defecto
+                    activity.startActivity(intent ,
+                            ActivityOptionsCompat.makeSceneTransitionAnimation(activity,view,activity.getString(R.string.transitionname_picture)).toBundle());
+                }else
+                {
+                    activity.startActivity(intent);
+                }
+
+
+
+
             }
         });
     }
