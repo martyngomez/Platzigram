@@ -1,12 +1,16 @@
-package com.mardev.platzigram.view.fragment;
+package com.mardev.platzigram.post.view;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +26,8 @@ import java.util.ArrayList;
  */
 public class HomeFragment extends Fragment {
 
+    private FloatingActionButton fabCamera;
+    private static final int REQUEST_CAMERA= 1;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -37,6 +43,8 @@ public class HomeFragment extends Fragment {
         showToolbar(getResources().getString(R.string.tab_home),false,view);
         RecyclerView picturesRecycler = (RecyclerView)view.findViewById(R.id.pictureRecycler);
 
+        fabCamera= (FloatingActionButton) view.findViewById(R.id.fabCamera);
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext()); //Layout Manager
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
@@ -45,9 +53,37 @@ public class HomeFragment extends Fragment {
         PictureAdapterRecyclerView pictureAdapterRecyclerView = new PictureAdapterRecyclerView(buildPictures(),R.layout.cardview_picure, getActivity());
 
         picturesRecycler.setAdapter(pictureAdapterRecyclerView);
+
+
+        fabCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                takePicture();
+            }
+        });
+
+
+
+
         return view;
 
     }
+
+    private void takePicture() {
+
+        Intent intentTakePicture = new Intent (MediaStore.ACTION_IMAGE_CAPTURE); // Intent implicito
+        if(intentTakePicture.resolveActivity(getActivity().getPackageManager())!= null)  { //Valida la existencia de una camara
+            startActivityForResult(intentTakePicture, REQUEST_CAMERA); //Abre camara
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) { //Obtiene el resultado de la camara
+       if( requestCode == REQUEST_CAMERA && resultCode == getActivity().RESULT_OK ){
+           Log.d("HomeFragment","Camera OK ! :)");
+        }
+    }
+
     public ArrayList<Picture> buildPictures(){
         //Metodo que genera array de pioctures desde internet
         ArrayList<Picture> pictures = new ArrayList<>();

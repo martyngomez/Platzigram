@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.mardev.platzigram.R;
-import com.mardev.platzigram.view.fragment.HomeFragment;
+import com.mardev.platzigram.post.view.HomeFragment;
 import com.mardev.platzigram.view.fragment.ProfileFragment;
 import com.mardev.platzigram.view.fragment.SearchFragment;
 import com.roughike.bottombar.BottomBar;
