@@ -18,4 +18,7 @@
     <string name="tab_profile">Me</string>
     <string name="secondword_detail">Me gusta</string>
     <string name="searchhinttext">Buscar</string>
+    <string name="hint_title">Título</string>
+    <string name="hint_description">Descripción</string>
+    <string name="text_button_createpost">Crear Post</string>
 </resources>
