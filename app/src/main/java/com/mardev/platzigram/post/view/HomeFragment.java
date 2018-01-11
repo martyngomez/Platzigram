@@ -2,10 +2,13 @@ package com.mardev.platzigram.post.view;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,7 +22,11 @@ import com.mardev.platzigram.R;
 import com.mardev.platzigram.adapter.PictureAdapterRecyclerView;
 import com.mardev.platzigram.model.Picture;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +35,8 @@ public class HomeFragment extends Fragment {
 
     private FloatingActionButton fabCamera;
     private static final int REQUEST_CAMERA= 1;
+    private String photoPathTemp = "";
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -71,16 +80,47 @@ public class HomeFragment extends Fragment {
 
     private void takePicture() {
 
-        Intent intentTakePicture = new Intent (MediaStore.ACTION_IMAGE_CAPTURE); // Intent implicito
+        Intent intentTakePicture = new Intent (MediaStore.ACTION_IMAGE_CAPTURE); // Intent implicito // Abre camara
         if(intentTakePicture.resolveActivity(getActivity().getPackageManager())!= null)  { //Valida la existencia de una camara
-            startActivityForResult(intentTakePicture, REQUEST_CAMERA); //Abre camara
+            File photoFile = null ;
+
+            try {
+                photoFile = createImageFile();
+            }catch(Exception e)
+            {
+                e.printStackTrace();
+            }
+
+            if (photoFile != null){
+              //  String packageName = getActivity().getApplicationContext().getPackageName(); //Obetern package
+                Uri photoUri = FileProvider.getUriForFile(getActivity(),"com.mardev.platzigram", photoFile ); //Obtiene Uri de la foto
+                intentTakePicture.putExtra(MediaStore.EXTRA_OUTPUT,photoUri); //Almacienamiento para la foto
+                startActivityForResult(intentTakePicture, REQUEST_CAMERA); //Abre camara
+
+            }
+
+
         }
     }
 
+    private File createImageFile() throws IOException {
+        String timeStamp= new SimpleDateFormat("yyyyMMdd_HH-mm-ss").format(new Date()); // Obtiene la hora
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir= getActivity().getExternalFilesDir(Environment.DIRECTORY_PICTURES) ; //Obtiene ruta default de imagenes //El objeto File se usa tambien para directorios
+        File photo = File.createTempFile(imageFileName,".jpg",storageDir); //archivo / extensión / ruta destino
+
+        photoPathTemp = "file:" + photo.getAbsolutePath(); //Ruta absoluta de la foto temporal
+
+        return photo;
+    }
+
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) { //Obtiene el resultado de la camara
+    public void onActivityResult(int requestCode, int resultCode, Intent data) { //Obtiene el resultado de la camara // callback
        if( requestCode == REQUEST_CAMERA && resultCode == getActivity().RESULT_OK ){
            Log.d("HomeFragment","Camera OK ! :)");
+           Intent i = new Intent(getActivity(), NewPostActivity.class);
+           i.putExtra("PHOTO_PATH_TEMP",photoPathTemp);
+           startActivity(i);
         }
     }
 
