@@ -14,7 +14,6 @@ import com.martyngomez.platzigram.R;
 import com.martyngomez.platzigram.login.presenter.LoginPresenter;
 import com.martyngomez.platzigram.login.presenter.LoginPresenterImpl;
 import com.martyngomez.platzigram.view.ContainerActivity;
-import com.martyngomez.platzigram.view.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
     private TextInputEditText username,password;
