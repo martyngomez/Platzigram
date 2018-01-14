@@ -37,9 +37,9 @@ public class CreateAccountActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance(); // Obtiene la informacion desde json
 
-        authStateListener = new FirebaseAuth.AuthStateListener() {
+        authStateListener = new FirebaseAuth.AuthStateListener() { //Listener que esta pendiente de lo cambios en la sesion
             @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {  //Si la ssion cambia ejecuta el codigo
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null){ //Valida si esta logueado
                     Log.w(TAG, "Usuario Logueado" + firebaseUser.getEmail());
@@ -67,11 +67,14 @@ public class CreateAccountActivity extends AppCompatActivity {
         firebaseAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() { //Devuelve si la opoeracion fue exitosa o no
                     @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
+                    public void onComplete(@NonNull Task<AuthResult> task ) {
                         if(task.isSuccessful()){
                             Toast.makeText(CreateAccountActivity.this, "Cuenta creada exitosamente", Toast.LENGTH_SHORT).show();
                         }else{
-                            Toast.makeText(CreateAccountActivity.this, "Error al Cuenta creada", Toast.LENGTH_SHORT).show();
+                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                            Toast.makeText(CreateAccountActivity.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(CreateAccountActivity.this, "Error al Cuenta creada" , Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
