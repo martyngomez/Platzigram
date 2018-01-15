@@ -31,7 +31,7 @@ public class LoginRepositoryImpl implements LoginRespository {
                 if (task.isSuccessful()){
                     presenter.loginSuccess();
                 }else{
-                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                    Log.w(TAG, "Error de Login", task.getException());
                     presenter.logInError("Login Error ");
                 }
             }
