@@ -21,4 +21,5 @@
     <string name="hint_title">Título</string>
     <string name="hint_description">Descripción</string>
     <string name="text_button_createpost">Crear Post</string>
+    <string name="logout">Desconectar</string>
 </resources>

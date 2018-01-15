@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null){ //Valida si esta logueado
                     Log.w(TAG, "Usuario Logueado" + firebaseUser.getEmail());
-                    goHome();//Si esta logueado no va a login
+                   // goHome();//Si esta logueado no va a login
                 }
                 else{
                     Log.w(TAG, "Usuario No Logueado" );

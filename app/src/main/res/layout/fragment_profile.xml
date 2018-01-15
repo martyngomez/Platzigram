@@ -42,6 +42,19 @@
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/textsize_usernameprofile"/>
 
+                <TextView
+                    android:id="@+id/profileLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:textColor="@color/editTextColorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize_donthaveaccount"
+                    android:layout_toRightOf="@+id/dontHaveAccount"
+                    android:paddingLeft="@dimen/margin_text"
+                    android:onClick="logOut"/>
+
+
             </LinearLayout>
 
 
