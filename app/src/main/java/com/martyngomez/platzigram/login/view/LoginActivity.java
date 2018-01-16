@@ -1,6 +1,8 @@
 package com.martyngomez.platzigram.login.view;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -120,6 +122,13 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful())
                 {
+                    FirebaseUser user = task.getResult().getUser(); //trae datos del usuario desde Firebase
+                    SharedPreferences preferences = getSharedPreferences("USER", Context.MODE_PRIVATE );
+                    SharedPreferences.Editor editor = preferences.edit(); //Abre Shares Preferences
+                    editor.putString("email", user.getEmail()); //Inserta en XML
+                    editor.commit(); //Cierra operacion
+
+
                     goHome();
                     hideProgressBar();
                 }else{
