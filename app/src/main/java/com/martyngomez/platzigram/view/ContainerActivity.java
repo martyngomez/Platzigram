@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.martyngomez.platzigram.R;
@@ -29,21 +33,7 @@ public class ContainerActivity extends AppCompatActivity {
         BottomBar bottonBar = findViewById(R.id.bottombar);
         bottonBar.setDefaultTab(R.id.home); //Fragment por defecto
 
-        firebaseAuth = FirebaseAuth.getInstance(); // Obtiene la informacion desde json
-       // authStateListener = new FirebaseAuth.AuthStateListener() { //Listener que esta pendiente de lo cambios en la sesion
-           // @Override
-          //  public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {  //Si la ssion cambia ejecuta el codigo
-                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-                if (firebaseUser != null){ //Valida si esta logueado
-                    Log.w(TAG, "Usuario Logueado" + firebaseUser.getEmail());
-
-                }
-                else{
-                    Log.w(TAG, "Usuario No Logueado" );
-                    goLogin();//Si No esta logueado va a login.
-                }
-          //  }
-      //  };
+        firebaseInitializa();
 
         bottonBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
@@ -75,9 +65,54 @@ public class ContainerActivity extends AppCompatActivity {
 
     }
 
+    private void firebaseInitializa(){
+        firebaseAuth = FirebaseAuth.getInstance(); // Obtiene la informacion desde json
+       // authStateListener = new FirebaseAuth.AuthStateListener() { //Listener que esta pendiente de lo cambios en la sesion
+            // @Override
+         //   public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {  //Si la ssion cambia ejecuta el codigo
+                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                if (firebaseUser != null) { //Valida si esta logueado
+                    Log.w(TAG, "Usuario Logueado" + firebaseUser.getEmail());
+
+                } else {
+                    Log.w(TAG, "Usuario No Logueado");
+                    goLogin();
+                }
+           // }
+       // };
+    }
+
+
 
     public void goLogin() {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) { //Agrega Menu
+        getMenuInflater().inflate(R.menu.menu_opciones,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) { //Captura accion en menu
+        switch (item.getItemId()){
+            case R.id.mSignnOut:
+                firebaseAuth.signOut();
+
+                if (LoginManager.getInstance()!= null){
+                      LoginManager.getInstance().logOut();
+                }
+
+                Toast.makeText(this, "Sesion cerrada", Toast.LENGTH_SHORT).show();
+                goLogin();
+
+                break;
+            case R.id.mAbout:
+                Toast.makeText(this, "Platzigram by martyngomez form Platzi", Toast.LENGTH_SHORT).show();
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
