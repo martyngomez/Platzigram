@@ -33,15 +33,19 @@
         </provider>
 
 
-        <activity android:name="com.martyngomez.platzigram.view.ContainerActivity" >
+        <activity android:name="com.martyngomez.platzigram.login.view.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.martyngomez.platzigram.login.view.LoginActivity" >
-        </activity>
+        <activity android:name="com.martyngomez.platzigram.view.ContainerActivity"
+            android:parentActivityName="com.martyngomez.platzigram.login.view.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.martyngomez.platzigram.login.view.LoginActivity" />
+        </activity>>
 
         <activity
             android:name="com.martyngomez.platzigram.login.view.CreateAccountActivity"

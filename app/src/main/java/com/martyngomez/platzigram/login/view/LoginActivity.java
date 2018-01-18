@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null){ //Valida si esta logueado
                     Log.w(TAG, "Usuario Logueado" + firebaseUser.getEmail());
-                   // goHome();//Si esta logueado no va a login
+                    goHome();//Si esta logueado no va a login
                 }
                 else{
                     Log.w(TAG, "Usuario No Logueado" );
@@ -182,8 +182,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void goHome() {
-        Intent intent = new Intent(this, ContainerActivity.class); //Prmer parametro :actividad origen, seundo actividad destino
+        Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
+        finish();
     }
 
     @Override

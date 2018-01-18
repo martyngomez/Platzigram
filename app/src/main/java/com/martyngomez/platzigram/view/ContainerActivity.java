@@ -87,6 +87,7 @@ public class ContainerActivity extends AppCompatActivity {
     public void goLogin() {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
+        finish();
     }
 
     @Override

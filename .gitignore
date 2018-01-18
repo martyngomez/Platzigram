@@ -40,3 +40,4 @@ project.properties
 .gradle
 build/
 app/buid/
+google-services.json
