@@ -52,7 +52,7 @@
                     android:textSize="@dimen/textsize_donthaveaccount"
                     android:layout_toRightOf="@+id/dontHaveAccount"
                     android:paddingLeft="@dimen/margin_text"
-                    android:onClick="logOut"/>
+                    />
 
 
             </LinearLayout>

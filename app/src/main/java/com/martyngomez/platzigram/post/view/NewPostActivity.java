@@ -90,6 +90,8 @@ public class NewPostActivity extends AppCompatActivity {
     }
 
     private void showPhoto() {
-        Picasso.with(this).load(photoPath).into(imgPhoto); //Carga la foto
+        Picasso.with(this).load( photoPath).fit().centerCrop().into(imgPhoto); //Carga la foto
+
+
     }
 }
