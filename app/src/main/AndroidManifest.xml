@@ -57,7 +57,7 @@
 
 
         <activity
-            android:name="com.martyngomez.platzigram.view.PictureDetailActivity"
+            android:name="com.martyngomez.platzigram.post.view.PictureDetailActivity"
             android:parentActivityName="com.martyngomez.platzigram.view.ContainerActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
