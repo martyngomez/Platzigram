@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.crash.FirebaseCrash;
 import com.martyngomez.platzigram.R;
 import com.martyngomez.platzigram.adapter.PictureAdapterRecyclerView;
 import com.martyngomez.platzigram.model.Picture;
@@ -21,6 +22,8 @@ import java.util.ArrayList;
 public class SearchFragment extends Fragment {
 
 
+    private static final String TAG = "SearchFragment" ;
+
     public SearchFragment() {
         // Required empty public constructor
     }
@@ -30,6 +33,7 @@ public class SearchFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        FirebaseCrash.log("Inicializando " + TAG);
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search, container, false);

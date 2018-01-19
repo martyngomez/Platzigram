@@ -18,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.crash.FirebaseCrash;
 import com.martyngomez.platzigram.R;
 import com.martyngomez.platzigram.adapter.PictureAdapterRecyclerView;
 import com.martyngomez.platzigram.model.Picture;
@@ -46,6 +47,8 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        //FirebaseCrash.report( new Exception("Error Frozado") );
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
 
@@ -89,6 +92,7 @@ public class HomeFragment extends Fragment {
             }catch(Exception e)
             {
                 e.printStackTrace();
+                FirebaseCrash.report(e);
             }
 
             if (photoFile != null){

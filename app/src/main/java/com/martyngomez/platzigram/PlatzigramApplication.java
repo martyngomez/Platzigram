@@ -7,6 +7,7 @@ import android.util.Log;
 import com.facebook.FacebookSdk;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.crash.FirebaseCrash;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
@@ -24,6 +25,8 @@ public class PlatzigramApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        FirebaseCrash.log("Inicializando variables en PlatzigramApplication");
+
         FacebookSdk.sdkInitialize(getApplicationContext());
 
 
@@ -33,10 +36,11 @@ public class PlatzigramApplication extends Application {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {  //Si la ssion cambia ejecuta el codigo
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null){ //Valida si esta logueado
-                    Log.w(TAG, "Usuario Logueado" + firebaseUser.getEmail());
+                    //Log.w(TAG, "Usuario Logueado" + firebaseUser.getEmail());
+                    FirebaseCrash.logcat(Log.WARN,TAG,"Usuario Logueado" + firebaseUser.getEmail() );
                 }
                 else{
-                    Log.w(TAG, "Usuario No Logueado" );
+                    FirebaseCrash.logcat(Log.WARN,TAG,"Usuario No Logueado" );
                 }
             }
         };

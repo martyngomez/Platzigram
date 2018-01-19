@@ -1,0 +1,45 @@
+* [1;34m59b0eda[m - [1;32m(86 seconds ago)[m [37mFix de Carga de imagen en Create New Post[m [2;37m- Martin Gomez[m[1;33m (HEAD -> master)[m
+[31m|[m *   [1;34m6976861[m - [1;32m(10 minutes ago)[m [37mWIP on (no branch): 5013587 Subir Foto a Firebase Storage.[m [2;37m- Martin Gomez[m[1;33m (refs/stash)[m
+[31m|[m [31m|[m[33m\[m  
+[31m|[m[31m/[m [33m/[m  
+[31m|[m * [1;34md8be38b[m - [1;32m(10 minutes ago)[m [37mindex on (no branch): 5013587 Subir Foto a Firebase Storage.[m [2;37m- Martin Gomez[m[1;33m[m
+[31m|[m[31m/[m  
+* [1;34m5013587[m - [1;32m(18 hours ago)[m [37mSubir Foto a Firebase Storage.[m [2;37m- Martin Gomez[m[1;33m[m
+[33m|[m * [1;34m894fe99[m - [1;32m(23 hours ago)[m [37mDelete google-services.json[m [2;37m- Martín Marcelo Gómez[m[1;33m (origin/master)[m
+[33m|[m[33m/[m  
+* [1;34m9b5a22f[m - [1;32m(24 hours ago)[m [37mFix de bucle Home-Login. Gitignore upgrade.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m2c3fde4[m - [1;32m(2 days ago)[m [37mMenu Agregado. Cierre de sesion desde menu agregado.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mb8145c6[m - [1;32m(3 days ago)[m [37mShared Preferences.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mfde25f2[m - [1;32m(4 days ago)[m [37mCambio de Main Activity a Container Activity. Logout Basico en Perfil. Funcionalidad de que si el usuario no esta logueado mande a Login.[m [2;37m- Martin Gomez[m[1;33m (Clean-Architecture)[m
+* [1;34m829b243[m - [1;32m(4 days ago)[m [37mLogin Con Facebook.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m52b979f[m - [1;32m(5 days ago)[m [37mLogin con email en Firebase.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mdf775c8[m - [1;32m(7 days ago)[m [37mCreacion de Cuenta en Firebase.[m [2;37m- Martin Gomez[m[1;33m (origin/Clean-Architecture)[m
+* [1;34m4374b71[m - [1;32m(7 days ago)[m [37mConectividad con Firebase.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m2bf63e2[m - [1;32m(8 days ago)[m [37mCambio de nombre de package y refactorización.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m1ddea84[m - [1;32m(8 days ago)[m [37mGuardar foto y generar post con la foto.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m802a03c[m - [1;32m(9 days ago)[m [37mFrontend de Activity Crear Post.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m8abbbf6[m - [1;32m(9 days ago)[m [37mImplementacion de Login con MVP y Funcionalidad de acceso a Camara.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34ma1f25c1[m - [1;32m(10 days ago)[m [37mClean Architecure and MVP implemented.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m582db5c[m - [1;32m(11 days ago)[m [37mFragment Search Frontend added.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m551ee64[m - [1;32m(11 days ago)[m [37mExternal URL added at logo.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34me64eda1[m - [1;32m(11 days ago)[m [37mFixes in gitignore[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m8a59146[m - [1;32m(11 days ago)[m [37mTransitions added. Set transparency to bottom bar in picture detail.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m59d4eff[m - [1;32m(13 days ago)[m [37mgitignore folders cleaned.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m7e7fb16[m - [1;32m(13 days ago)[m [37mgitignore impoved.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mccbc8b2[m - [1;32m(2 weeks ago)[m [37mMargin text in Login fixed.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mb955c20[m - [1;32m(2 weeks ago)[m [37mProfile view created. Zoonooz Behavior implemented.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m198b587[m - [1;32m(2 weeks ago)[m [37mOnClick Listener in RecyclerView Added.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m601def9[m - [1;32m(2 weeks ago)[m [37mGitignore Improve[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m3551bed[m - [1;32m(3 weeks ago)[m [37mFragments. Fix images from interent[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m49e5abf[m - [1;32m(3 weeks ago)[m [37mRecycledView implemented.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mec4f9c1[m - [1;32m(3 weeks ago)[m [37mFragments running in BottonBar.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34md9e7e9e[m - [1;32m(3 weeks ago)[m [37mContainer Fragments added.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m80b39f6[m - [1;32m(4 weeks ago)[m [37mCard View created.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m71d53aa[m - [1;32m(4 weeks ago)[m [37mIntent to Account creator.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mc296f19[m - [1;32m(5 weeks ago)[m [37mCreate Account Layout created.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m70c164e[m - [1;32m(5 weeks ago)[m [37mAccount Creation text.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34ma4ea3eb[m - [1;32m(5 weeks ago)[m [37mEdit Text style added. Scroll View added.[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m54d6ead[m - [1;32m(5 weeks ago)[m [37mEstilo de boton[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mff0fd27[m - [1;32m(5 weeks ago)[m [37mInternalizacion de strings[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34m446a779[m - [1;32m(5 weeks ago)[m [37mgitignore[m [2;37m- Martin Gomez[m[1;33m[m
+* [1;34mb8321e7[m - [1;32m(5 weeks ago)[m [37mLayouts generales y logo[m [2;37m- Martin Gomez[m[1;33m[m

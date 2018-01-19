@@ -28,6 +28,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.crash.FirebaseCrash;
 import com.martyngomez.platzigram.R;
 import com.martyngomez.platzigram.login.presenter.LoginPresenter;
 import com.martyngomez.platzigram.login.presenter.LoginPresenterImpl;
@@ -109,6 +110,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
             public void onError(FacebookException error) {
                 Log.w(TAG, "Facebook Login Error : " + error.toString());
                 error.printStackTrace();
+                FirebaseCrash.report(error);
             }
         });
 

@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.crash.FirebaseCrash;
 import com.martyngomez.platzigram.R;
 import com.martyngomez.platzigram.adapter.PictureAdapterRecyclerView;
 import com.martyngomez.platzigram.model.Picture;
@@ -25,6 +26,7 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class ProfileFragment extends Fragment {
+    private static final String TAG = "ProfileFragment";
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
     TextView logOut;
@@ -37,8 +39,10 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        FirebaseCrash.log("Inicializando " + TAG);
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
         showToolbar("",false, view);
 
         RecyclerView picturesRecycler = (RecyclerView)view.findViewById(R.id.pictureProfileRecycler);
